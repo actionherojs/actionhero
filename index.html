@@ -1,0 +1,344 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>actionhero</title>
+	<meta name="description" content="Documentation for actionhero">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">actionhero</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>actionhero</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#actionhero" id="actionhero" style="color: inherit; text-decoration: none;">
+					<h1>Actionhero</h1>
+				</a>
+				<p><em>The reusable, scalable, and quick node.js API server for stateless and stateful applications</em></p>
+				<hr>
+				<div align="center">
+					<img src="https://raw.github.com/actionhero/actionhero/master/public/logo/actionhero-small.png" alt="Actionhero Logo" />
+				</div>
+				<br />
+				<div align="center" class="topLinks">
+					<p><strong><a href="https://npmjs.org/package/actionhero">NPM</a> |
+							<a href="https://www.actionherojs.com">Web Site</a> |
+							<a href="https://docs.actionherojs.com">Latest Docs</a> |
+							<a href="https://github.com/actionhero/actionhero">GitHub</a> |
+							<a href="https://slack.actionherojs.com">Slack</a> |
+					<a href="https://twitter.com/actionherojs">Twitter</a></strong></p>
+				</div>
+				<br />
+				<div align="center" class="topBadges">
+					<p><a href="https://www.npmjs.com/package/actionhero"><img src="https://img.shields.io/npm/v/actionhero.svg?style=flat-square" alt="NPM Version"></a>
+						<a href="https://npmjs.org/package/actionhero"><img src="https://img.shields.io/node/v/actionhero.svg?style=flat-square" alt="Node Version"></a>
+						<a href="https://npmjs.org/package/actionhero"><img src="https://img.shields.io/npm/dm/actionhero.svg?style=flat-square" alt="NPM"></a>
+					<a href="https://david-dm.org/actionhero/actionhero"><img src="https://david-dm.org/actionhero/actionhero.svg?style=flat-square" alt="Dependency Status"></a></p>
+					<p><img src="https://github.com/actionhero/actionhero/workflows/Test/badge.svg" alt="Test">
+						<a href="https://github.com/l0oky/awesome-actionhero"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a>
+						<a href="https://app.releasly.co/sites/actionhero/actionhero?utm_source=github_badge"><img src="https://app.releasly.co/assets/badges/badge-green-classic.svg" alt="Follow new releases"></a>
+					<a href="http://slack.actionherojs.com"><img src="https://slack.actionherojs.com/badge.svg" alt="Chat"></a></p>
+				</div>
+				<a href="#who-is-the-actionhero" id="who-is-the-actionhero" style="color: inherit; text-decoration: none;">
+					<h2>Who is the Actionhero?</h2>
+				</a>
+				<p>Actionhero is a multi-transport API Server with integrated cluster capabilities and delayed tasks. The goal of actionhero is to create an easy-to-use toolkit for making <strong>reusable</strong> &amp; <strong>scalable</strong> APIs for HTTP, WebSockets, and more. Clients connected to an actionhero server can <a href="https://www.actionherojs.com/tutorials/actions"><strong>consume the api</strong></a>, <a href="https://www.actionherojs.com/tutorials/file-server"><strong>consume static content</strong></a>, and <a href="https://www.actionherojs.com/tutorials/chat"><strong>communicate with each other</strong></a>. Actionhero is cluster-ready, with built in support for background tasks, 0-downtime deploys, and more. Actionhero provides a simple Async/Await API for managing every type of connection and background task.</p>
+				<p>Currently actionhero supports the following out of the box...</p>
+				<ul>
+					<li><a href="https://www.actionherojs.com/tutorials/web-server">Web Clients</a>: HTTP, HTTPS</li>
+					<li><a href="https://www.actionherojs.com/tutorials/websocket-server">Web Socket Clients</a>: HTTP, HTTPS</li>
+				</ul>
+				<p><a href="https://www.actionherojs.com/tutorials/servers">... and you can also make your own servers and transports.</a></p>
+				<a href="#quick-start" id="quick-start" style="color: inherit; text-decoration: none;">
+					<h2>Quick Start</h2>
+				</a>
+				<pre><code class="language-bash"><span style="color: #008000"># Generate a new Project</span>
+<span style="color: #000000">npx actionhero generate</span>
+<span style="color: #000000">npm install</span>
+<span style="color: #000000">npm run build</span>
+<span style="color: #000000">npm run dev </span><span style="color: #008000"># &lt;-- I automatically notice changes and restart, as well as compiling .ts files</span>
+
+<span style="color: #008000"># Use the actionhero CLI</span>
+<span style="color: #000000">(npx) actionhero generate action --name my_action</span>
+<span style="color: #000000">(npx) actionhero generate task --name my_task --queue default --frequency 0</span>
+
+<span style="color: #008000"># Test</span>
+<span style="color: #000000">npm </span><span style="color: #795E26">test</span>
+
+<span style="color: #008000"># To deploy your app</span>
+<span style="color: #000000">npm run build</span>
+<span style="color: #000000">npm run start</span>
+</code></pre>
+				<p>Your new project will come with example actions, tests, and more.</p>
+				<p>Or deploy a free API server now:</p>
+				<p><a href="https://heroku.com/deploy?template=https://github.com/actionhero/actionhero"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku"></a></p>
+				<a href="#learn-more-📚" id="learn-more-📚" style="color: inherit; text-decoration: none;">
+					<h2>Learn More 📚</h2>
+				</a>
+				<ul>
+					<li><a href="https://www.actionherojs.com/get-started">Getting Started @ www.actionherojs.com</a><ul>
+							<li>Actionhero&#39;s website can be found @ <a href="https://github.com/actionhero/www.actionherojs.com/">https://github.com/actionhero/www.actionherojs.com/</a>. If you want to contribute to this site, visit the <a href="https://github.com/actionhero/www.actionherojs.com">related project</a></li>
+							<li>---&gt; Start with the <a href="https://www.actionherojs.com/tutorials">Tutorials</a> &lt;---</li>
+						</ul>
+					</li>
+					<li><a href="http://docs.actionherojs.com/">Read the typedoc documentation @ docs.actionherojs.com</a><ul>
+							<li>Starting with Actionhero version 18, the documentation for each version is included in this repository (and the NPM package) in the <code>/docs</code> folder. The current version of this documentation is also automatically deployed to <a href="https://docs.actionherojs.com">https://docs.actionherojs.com</a>.</li>
+						</ul>
+					</li>
+					<li><a href="https://github.com/l0oky/awesome-actionhero">Find community-based resources</a></li>
+					<li><a href="https://www.actionherojs.com/community">Interact with the Community &amp; View the Release History</a></li>
+					<li><a href="https://github.com/actionhero/actionhero-client">Server Client</a></li>
+				</ul>
+				<a href="#in-depth-tutorials-🎓" id="in-depth-tutorials-🎓" style="color: inherit; text-decoration: none;">
+					<h2>In-depth Tutorials 🎓</h2>
+				</a>
+				<a href="#core-components" id="core-components" style="color: inherit; text-decoration: none;">
+					<h3>Core Components</h3>
+				</a>
+				<ul>
+					<li><a href="https://www.actionherojs.com/tutorials/actions">Actions</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/tasks">Tasks</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/middleware">Middleware</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/initializers">Initializers</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/cli">CLI Commands</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/config">Configuration</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/cluster">Cluster</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/chat">Chat &amp; Realtime Communication</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/file-server">File Server</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/logging">Logging</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/plugins">Plugins</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/servers">Servers</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/localization">Localization &amp; Translation</a></li>
+				</ul>
+				<a href="#server-types" id="server-types" style="color: inherit; text-decoration: none;">
+					<h3>Server Types</h3>
+				</a>
+				<ul>
+					<li><a href="https://www.actionherojs.com/tutorials/web-server">Web Server &amp; Routes</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/websocket-server">WebSocket Server</a></li>
+				</ul>
+				<a href="#testing-deployment-and-operations" id="testing-deployment-and-operations" style="color: inherit; text-decoration: none;">
+					<h3>Testing, Deployment, and Operations</h3>
+				</a>
+				<ul>
+					<li><a href="https://www.actionherojs.com/tutorials/running-actionhero">Running Actionhero</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials#configuration">Development Mode &amp; REPL</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/testing">Testing &amp; SpecHelper</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/production-notes">Production Notes</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/upgrade-path">Upgrade Path</a></li>
+				</ul>
+				<a href="#sample-projects" id="sample-projects" style="color: inherit; text-decoration: none;">
+					<h2>Sample Projects</h2>
+				</a>
+				<ul>
+					<li><a href="https://github.com/actionhero/actionhero-tutorial">Simple</a></li>
+					<li><a href="https://github.com/actionhero/actionhero-chat">Elaborate (React, Next.JS, Bootstrap, Sequelize)</a></li>
+					<li><a href="https://github.com/actionhero/actionhero-react-next-chat">Client Use: React</a></li>
+					<li><a href="https://github.com/actionhero/actionhero-react-native">Client Use: React Native</a></li>
+				</ul>
+				<a href="#who" id="who" style="color: inherit; text-decoration: none;">
+					<h2>Who?</h2>
+				</a>
+				<ul>
+					<li>Many folks <a href="https://github.com/actionhero/actionhero/graphs/contributors">have helped</a> to make Actionhero a reality.</li>
+					<li>If you want to contribute to actionhero, contribute to the conversation on <a href="https://github.com/actionhero/actionhero">github</a> and join us on <a href="https://slack.actionherojs.com">slack</a></li>
+				</ul>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
+				<ul>
+					<li>Contributing to Actionhero is easy! <a href="https://github.com/actionhero/actionhero/blob/master/.github/CONTRIBUTING.md">You can learn more about contributing to Actionhero here</a></li>
+					<li>By engaging the with Actionhero community or contributing to this or related projects, you agree to our <a href="https://github.com/actionhero/actionhero/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+				</ul>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
+				<p><a href="https://github.com/actionhero/actionhero/blob/master/LICENSE.txt">Apache 2.0</a></p>
+				<a href="#dedication" id="dedication" style="color: inherit; text-decoration: none;">
+					<h2>Dedication</h2>
+				</a>
+				<blockquote>
+					<p>Technology is a powerful force in our society. Data, software, and communication can be used for bad: to entrench unfair power structures, to undermine human rights, and to protect vested interests. But they can also be used for good: to make underrepresented people’s voices heard, to create opportunities for everyone, and to avert disasters. This project is dedicated to everyone working toward the good.</p>
+					<blockquote>
+						<p>Inspired by Martin Kleppmann</p>
+					</blockquote>
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/action.html">action</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/cache.html">cache</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/chatRoom.html">chat<wbr>Room</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/i18n.html">i18n</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/redis.html">redis</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/route.html">route</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/specHelper.html">spec<wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/task.html">task</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/Action.html" class="tsd-kind-icon">Action</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/ActionProcessor.html" class="tsd-kind-icon">Action<wbr>Processor</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Api.html" class="tsd-kind-icon">Api</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/CLI.html" class="tsd-kind-icon">CLI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Connection.html" class="tsd-kind-icon">Connection</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Initializer.html" class="tsd-kind-icon">Initializer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Process.html" class="tsd-kind-icon">Process</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Server.html" class="tsd-kind-icon">Server</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Task.html" class="tsd-kind-icon">Task</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#AssertEqualType" class="tsd-kind-icon">Assert<wbr>Equal<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#ExceptionReporter" class="tsd-kind-icon">Exception<wbr>Reporter</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#UnwrapPromise" class="tsd-kind-icon">Unwrap<wbr>Promise</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#actionheroVersion" class="tsd-kind-icon">actionhero<wbr>Version</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#api" class="tsd-kind-icon">api</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#config" class="tsd-kind-icon">config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#env" class="tsd-kind-icon">env</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#id" class="tsd-kind-icon">id</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#loggers" class="tsd-kind-icon">loggers</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#projectRoot" class="tsd-kind-icon">project<wbr>Root</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#typescript" class="tsd-kind-icon">typescript</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#utils" class="tsd-kind-icon">utils</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#log" class="tsd-kind-icon">log</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
